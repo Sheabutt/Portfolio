@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar+One&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="photo.png">
+    <title>Tailwind Project</title>
+  </head>
+  <style>
+    .nav-link:hover{
+      border-bottom: 1px solid black;
+    }
+  </style>
+
+  <body>
+    <main style="font-family: 'Poppins', sans-serif">
+        <header class="navbar navbar-expand-md fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-200 to-pink-300 text-white px-4">
+          <div class="container-fluid">
+            <img src="photo.png" class="w-[50px] block md:hidden">
+            <img src="design_icon.png" class="w-[30px] mt-[-10px] mr-4 hidden md:block">
+            <h1 class="text-4xl font-bold text-pink-600 hidden md:block" style="font-family: 'Poppins'">ANE <span class="text-[15px] text-gray-500" style="font-family: 'Poppins', sans-serif">| Visuals</span>
+            </h1>
+            <button class="navbar-toggler text-gray-800" type="button" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasNav" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start w-50" id="offcanvasNav">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="navbar-nav ms-auto gap-10">
+                  <a href="#" class="nav-link text-lg font-medium hover:text-pink-800 py-3 px-6" >Introduction</a>
+                  <a href="#about-me" class="nav-link text-lg font-medium hover:text-pink-800 py-3 px-6">About</a>
+                  <a href="#project" class="nav-link text-lg font-medium hover:text-pink-800 py-3 px-6">Projects</a>
+                  <a href="#contact" class="nav-link text-lg font-medium hover:text-pink-800 py-3 px-6">Contact</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="flex flex-col mx-auto md:items-center">
+          <section id="intro" class="bg-gradient-to-r from-yellow-200 to-pink-300 w-full h-screen rounded-b-3xl shadow md:h-auto" style="background-size: cover; background-attachment: fixed;">
+          <div class="flex flex-col sm:flex-row justify-center p-20 gap-40">
+            <div class="text-left md:mt-[-20px]">
+              <h1 class="text-[50px] md:text-[150px] mb-[-80px] font-[900] py-10 flex items-center gap-3">
+                Hi! <span class="animate-waving-hand">👋</span>
+              </h1>
+              <h1 class="text-[50px] md:text-[150px] mb-[-80px] font-[900] py-10">I'm <span class="font-bold bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500 bg-clip-text text-transparent">Anna</span>,</h1>
+              <h1 class="text-[25px] md:text-[50px] font-bold py-10">Bringing ideas to life!</h1>
+              <div class="flex flex-col gap-2 md:flex-row md:gap-2">
+                <button class="outline outline-black w-100 px-3 py-3 transition-all delay-100 duration-300 ease-in-out rounded mr-5 hover:bg-gradient-to-r hover:from-pink-400 hover:to-pink-600 hover:text-white"><a href="#about-me"><i class="fa-solid fa-circle-info mr-2"></i> About Me</a>
+                </button>
+              <button
+                class="shadow-lg bg-violet-300 px-3 py-3 w-100 rounded hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-800 transition-all delay-100 duration-300 ease-in-out hover:text-white">
+                <i class="fa-solid fa-wand-magic-sparkles mr-5"><a href="#project"></i>See some of my works!</a></button>
+              </div>
+            </div>
+          <div class="ml-[-200px] mt-[80px]">
+            <img class="w-[600px] h-auto mt-[-100px] min-w-[200px] md:block hidden" src="photo.png" />
+          </div>
+        </div>
+      </section>
+      <section id="about-me" class="min-h-screen py-16">
+        <div class="container px-4 py-40">
+          <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-1">About Me</h2>
+            <div class="w-[100px] h-1 bg-gradient-to-r from-yellow-500 to-pink-500 rounded-full mb-4"></div>
+            <p class="text-lg text-gray-600 mb-6">
+              Hey there! 👋 I'm <span class="font-semibold text-purple-600">Anna Nicole Ermeo</span>, a passionate 
+              <span class="font-semibold text-purple-600">frontend developer</span> and <span class="font-semibold text-purple-600">layout artist</span>.
+              I bring ideas to life through beautiful, functional websites and engaging digital designs.
+            </p>
+            <p class="text-lg text-gray-600 mb-6">
+              My toolkit includes <span class="font-semibold">HTML, CSS, JavaScript, Figma, and Photoshop</span>. 
+              I specialize in crafting modern web interfaces, pubmats, banners, and shirt designs that make an impact.
+            </p>
+            <p class="text-lg text-gray-600 mb-6">
+              Whether it’s designing sleek UI layouts or creating stunning visual content, I love blending creativity and technology to tell compelling stories.  
+              When I’m not working, I’m exploring new design trends and refining my craft! 🎨🚀
+            </p>
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+              <a href="#website" class="mt-4 inline-block px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-purple-700 transition-all duration-300"><i class="fa-solid fa-desktop mr-2"></i>Website Design</a>
+              <a href="#logo" class="mt-4 inline-block px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-purple-700 transition-all duration-300"><i class="fa-solid fa-pen-nib mr-2"></i>Logo Design</a>
+              <a href="#shirt" class="mt-4 inline-block px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-purple-700 transition-all duration-300"><i class="fa-solid fa-shirt mr-2"></i>Shirt Design</a>
+              <a href="#c-content" class="mt-4 inline-block px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-purple-700 transition-all duration-300"><i class="fa-solid fa-palette mr-2"></i>Content Creation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project section -->
+      <section id="project" class="min-h-screen py-16">
+        <div id="website" class="container px-4 py-40 h-screen max-w-7xl">
+          <h2 class="text-4xl font-bold text-gray-800 mb-1">Projects</h2>
+          <div class="w-[100px] h-1 bg-gradient-to-r from-yellow-500 to-pink-500 rounded-full mb-4"></div>
+          <div class="relative inline-block px-6 py-3 text-white text-xl font-bold skew-x-[-10deg] bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg mb-5">
+            <h3 class="skew-x-[10deg]">Website Design</h3>
+          </div>
+          <div class="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out"><a href="https://lydo.bccbsis.com/" target="_blank">
+              <img class="w-full h-48 object-cover" src="capstone1.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Capstone Project</h3>
+              <p class="text-gray-600 text-sm">
+                Description of Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p></a>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-cover" src="avr.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Mini Capstone Java UI/UX</h3>
+              <p class="text-gray-600 text-sm">
+                Description of Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-cover" src="Quotopia.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Mini Capstone UI/UX</h3>
+              <p class="text-gray-600 text-sm">
+                Description of Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-cover" src="qualitech.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Mini Capstone Javascript UI/UX</h3>
+              <p class="text-gray-600 text-sm">
+                Description of Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+        </div> 
+        </div>
+        
+        <!-- logo design -->
+        <div id="logo" class="container px-4 py-40 min-h-screen max-w-7xl mt-[1000px] md:mt-[300px]">
+          <!-- Bootstrap CSS -->
+
+
+          <div id="logo" class="container px-4 py-40 min-h-screen max-w-7xl mt-[1000px] md:mt-[300px]">
+            <div class="relative inline-block px-6 py-3 text-white text-xl font-bold skew-x-[-10deg] bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg mb-5">
+              <h3 class="skew-x-[10deg]">Logo Design</h3>
+            </div>
+            <div class="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+              <!-- Card 1 -->
+              <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#modal1">
+                <img class="w-full h-48 object-contain" src="championlogo.png" alt="Project 1" />
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">CLMMRH Multipurpose Cooperative Logo</h3>
+                <p class="text-gray-600 text-sm">Champion</p>
+              </div>
+              <!-- Modal 1 -->
+              <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel1">CLMMRH Multipurpose Cooperative Logo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img class="img-fluid" src="championlogo.png" alt="Champion Logo">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Card 2 -->
+              <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#modal2">
+                <img class="w-full h-48 object-contain" src="consoloationlogo.png" alt="Project 2" />
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">CLMMRH Multipurpose Cooperative Logo</h3>
+                <p class="text-gray-600 text-sm">Consolation</p>
+              </div>
+              <!-- Modal 2 -->
+              <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel2">CLMMRH Multipurpose Cooperative Logo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img class="img-fluid" src="consoloationlogo.png" alt="Consolation Logo">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Card 3 -->
+              <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#modal3">
+                <img class="w-full h-48 object-contain" src="alumnilogo.png" alt="Project 3" />
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">BCC Alumni Logo</h3>
+                <p class="text-gray-600 text-sm">New Alumni Logo 2025</p>
+              </div>
+              <!-- Modal 3 -->
+              <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel3">BCC Alumni Logo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img class="img-fluid" src="alumnilogo.png" alt="Alumni Logo">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <!-- Shirt Design -->
+        <div id="shirt" class="container px-4 py-40 min-h-screen max-w-7xl">
+          <div class="relative inline-block px-6 py-3 text-white text-xl font-bold skew-x-[-10deg] bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg mb-5">
+            <h3 class="skew-x-[10deg]">Shirt Design</h3>
+          </div>
+          <div class="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            
+            <!-- Shirt Cards with Modals -->
+            <!-- Shirt 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal1">
+              <img class="w-full h-48 object-contain" src="cemo.jpg" alt="Shirt 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Bago City Shirt Design Contest</h3>
+              <p class="text-gray-600 text-sm">Champion out of 24 barangays</p>
+            </div>
+            <div class="modal fade" id="shirtModal1" tabindex="-1" aria-labelledby="shirtModalLabel1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel1">Bago City Shirt Design Contest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="cemo.jpg" alt="Bago City Shirt">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Shirt 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal2">
+              <img class="w-full h-48 object-contain" src="shirt1.png" alt="Shirt 2" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Filipino Department Shirt</h3>
+              <p class="text-gray-600 text-sm">Ramon Torres National High School</p>
+            </div>
+            <div class="modal fade" id="shirtModal2" tabindex="-1" aria-labelledby="shirtModalLabel2" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel2">Filipino Department Shirt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt1.png" alt="Filipino Department Shirt">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Shirt 3 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal3">
+              <img class="w-full h-48 object-contain" src="shirt2.png" alt="Shirt 3" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">BSIS Department Shirt</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="modal fade" id="shirtModal3" tabindex="-1" aria-labelledby="shirtModalLabel3" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel3">BSIS Department Shirt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt2.png" alt="BSIS Department Shirt">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal4">
+              <img class="w-full h-48 object-contain" src="shirt3.png" alt="Shirt 4" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">BCC Akasya Dance Club</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="modal fade" id="shirtModal4" tabindex="-1" aria-labelledby="shirtModalLabel4" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel4">BCC Akasya Dance Club</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt3.png" alt="BCC Akasya Dance Club">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Shirt 5 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal5">
+              <img class="w-full h-48 object-contain" src="shirt5.png" alt="Shirt 5" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Green Warriors Bago City Sports Fest</h3>
+              <p class="text-gray-600 text-sm">Bago City</p>
+            </div>
+            <div class="modal fade" id="shirtModal5" tabindex="-1" aria-labelledby="shirtModalLabel5" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel5">Green Warriors Bago City Sports Fest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt5.png" alt="Green Warriors Bago City Sports Fest">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Shirt 6 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal6">
+              <img class="w-full h-48 object-contain" src="shirt6.png" alt="Shirt 6" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">BSIS Chess Club</h3>
+              <p class="text-gray-600 text-sm">Bago City College University</p>
+            </div>
+            <div class="modal fade" id="shirtModal6" tabindex="-1" aria-labelledby="shirtModalLabel6" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel6">BSIS Chess Club</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt6.png" alt="BSIS Chess Club">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Shirt 7 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal7">
+              <img class="w-full h-48 object-contain" src="shirt7.png" alt="Shirt 7" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">BSIS OJT Shirt</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="modal fade" id="shirtModal7" tabindex="-1" aria-labelledby="shirtModalLabel7" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel7">BSIS OJT Shirt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt7.png" alt="BSIS OJT Shirt">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Shirt 8 -->
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#shirtModal8">
+              <img class="w-full h-48 object-contain" src="shirt8.png" alt="Shirt 8" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Barangay Alianza Shirt</h3>
+              <p class="text-gray-600 text-sm">Barangay Alianza</p>
+            </div>
+            <div class="modal fade" id="shirtModal8" tabindex="-1" aria-labelledby="shirtModalLabel8" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="shirtModalLabel8">Barangay Alianza Shirt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="shirt8.png" alt="Barangay Alianza Shirt">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Closing div for the #shirt container -->
+        
+        
+        
+        <!-- content creation -->
+        <div id="c-content" class="container px-4 py-40 min-h-screen max-w-7xl">
+          <div class="relative inline-block px-6 py-3 text-white text-xl font-bold skew-x-[-10deg] bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg mb-5">
+            <h3 class="skew-x-[10deg]">Content Creation</h3>
+          </div>
+        
+          <div class="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-contain" src="cc5.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">BSIS 1st Hackathon Banner</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-contain" src="cc4.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">BSIS Week Celebration Banner</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-contain" src="cc1.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Women's Month Pubmat</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-contain" src="cc2.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Mr. and Ms. Alcur Screening Pubmat</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out">
+              <img class="w-full h-48 object-contain" src="cc3.png" alt="Project 1" />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Pinay Pop Pubmat</h3>
+              <p class="text-gray-600 text-sm">Bago City College</p>
+            </div>
+          </div> <!-- Closing div for the grid container -->
+        </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="min-h-screen py-16">
+          <div class="container px-4 py-40">
+            <div class="max-w-3xl mx-auto">
+              <h2 class="text-4xl font-bold text-gray-800 mb-1">Contact Me</h2>
+              <div class="w-[100px] h-1 bg-gradient-to-r from-yellow-500 to-pink-500 rounded-full mb-4"></div>
+              <div class="flex flex-row bg-pink-100 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div class="w-[500px]">
+                  <img class="w-full h-full object-cover rounded-tl-lg rounded-bl-lg" alt="" src="contact3.jpg">
+                </div>
+                <div class="w-full">
+                  <form action="#" method="POST" class="space-y-4 justify-center text-center">
+                    <h3 class="mt-5 mb-[-10px]">You can send me a message through this website!</h3>
+                    <div class="mb-4 p-6">
+                      <input type="text" name="name" id="name" placeholder="Full Name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm" required>
+                      <div class="mt-4">
+                        <input type="email" name="email" id="email" placeholder="Email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                      <div class="mt-4">
+                        <textarea name="message" id="message" placeholder="Tell me your concern..." class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required></textarea>
+                        <button type="submit" class="mt-2 px-4 py-2 text-white font-semibold bg-indigo-500 rounded-full shadow-sm hover:bg-indigo-600">
+                        Send Message
+                        </button>
+                        <div class="flex align-center flex-row justify-center mt-6">
+                          <div class="mx-auto  w-20 h-0.5 bg-gray-600 rounded-full"></div>
+                        <h4 class="text-sm mt-[-10px]">or reach me through my socials</h4>
+                        <div class="mx-auto w-20 h-0.5 bg-gray-600 rounded-full"></div>
+                        </div>
+                        <div class="text-5xl mt-3 space-y-4">
+                          <a href="https://www.facebook.com/annanicole.ermeo.7/"><i class="fa-brands fa-facebook mr-2 hover:text-pink-500"></i></a>
+                          <a href="https://www.instagram.com/_____._._._.____._._._____"><i class="fa-brands fa-square-instagram hover:text-pink-500"></i></a>
+                        </div>
+                        
+                                                
+                      </div>
+                      </div>
+                      </div>
+    
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        </div>
+        <footer>
+          <div class="container px-4 py-4 text-center">
+            <p class="text-sm text-gray-500">Copyright &copy; 2025 by Anna Nicole Ermeo. All rights reserved.</p>
+          </div>
+        </footer>
+      </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
